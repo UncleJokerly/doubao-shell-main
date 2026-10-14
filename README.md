@@ -15,6 +15,11 @@
 
 两者都要求系统装有 WebView2 Runtime（Win10/11 随 Edge 自带）。未做代码签名，首次运行 SmartScreen 可能弹警告，点「仍要运行」即可。
 
+访问 GitHub Releases 不便时，走 Gitee 的 `binaries` 孤儿分支直链（与 Release 附件同一文件，MD5 `0cfc59ca...`）：
+
+- 安装包：<https://gitee.com/UncleJokerly/doubao-shell-main/raw/binaries/doubao-shell_0.1.0_x64-setup.exe>
+- 绿色版：<https://gitee.com/UncleJokerly/doubao-shell-main/raw/binaries/doubao-shell_0.1.0_windows_x64_portable.zip>
+
 ## 与原版 deepseek-shell 的差异
 
 | 项目 | deepseek-shell | doubao-shell |
