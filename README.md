@@ -4,6 +4,17 @@
 
 派生自 [deepseek-shell](https://github.com/benhack20/deepseek-shell)，本项目做了三处改动：加载豆包而非 DeepSeek、快捷键由 `Alt+Space` 改为 `Alt+D`、修掉了原版遗留的开机自启半成品逻辑（详见下文）。
 
+## 下载
+
+最新版本见 [GitHub Releases](https://github.com/UncleJokerly/doubao-shell-main/releases/tag/v0.1.0)：
+
+| 文件 | 说明 |
+| --- | --- |
+| [`doubao-shell_0.1.0_x64-setup.exe`](https://github.com/UncleJokerly/doubao-shell-main/releases/download/v0.1.0/doubao-shell_0.1.0_x64-setup.exe) | NSIS 安装包，1.13 MiB，装到 `%LOCALAPPDATA%\doubao-shell`，免管理员权限 |
+| [`doubao-shell_0.1.0_windows_x64_portable.zip`](https://github.com/UncleJokerly/doubao-shell-main/releases/download/v0.1.0/doubao-shell_0.1.0_windows_x64_portable.zip) | 免安装绿色版，1.36 MiB，解压即用 |
+
+两者都要求系统装有 WebView2 Runtime（Win10/11 随 Edge 自带）。未做代码签名，首次运行 SmartScreen 可能弹警告，点「仍要运行」即可。
+
 ## 与原版 deepseek-shell 的差异
 
 | 项目 | deepseek-shell | doubao-shell |
