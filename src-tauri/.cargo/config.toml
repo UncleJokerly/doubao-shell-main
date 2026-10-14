@@ -1,0 +1,14 @@
+# 只对本项目生效（cargo 会从 src-tauri 目录向上读取 .cargo/config.toml），
+# 不动全局 %USERPROFILE%\.cargo\config.toml。国内网络下 crates.io 直连很慢，这里换用字节 rsproxy 稀疏索引。
+[source.crates-io]
+replace-with = "rsproxy-sparse"
+
+[source.rsproxy-sparse]
+registry = "sparse+https://rsproxy.cn/index/"
+
+[registries.rsproxy]
+index = "sparse+https://rsproxy.cn/index/"
+
+[net]
+git-fetch-with-cli = true
+retry = 3
